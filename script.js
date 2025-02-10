@@ -31,8 +31,7 @@ document.getElementById('registrasiForm').addEventListener('submit', function(ev
     .then(response => response.text())
     .then(whatsappUrl => {
         alert('Registrasi Berhasil!');
-        window.open('https://Wa.me/62895386314380?text=Saya%20sudah%20Regiatrasi'); // Buka tautan WhatsApp di tab baru
-        window.location.reload();
+        window.open('https://Wa.me/62895386314380?text=Saya%20sudah%20Regiatrasi');
     })
     .catch(error => {
         console.error('Error:', error);
