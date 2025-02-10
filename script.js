@@ -20,7 +20,7 @@ document.getElementById('registrasiForm').addEventListener('submit', function(ev
         referral: finalReferral
     };
 
-    fetch('https://script.google.com/macros/s/AKfycbx-HBPRxF2ZiZDPig7w8h3eDt-1MWEUnyHcMq8ndLlnp9LMh3BuS0oXymL70cc7L8QvQA/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbyxyFIoOi6l4NSuWOK7byxS7zKYLnMoyVrSKnJsmGWAN1v6ymY3crEYBR3R3XhXeRfDAw/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
