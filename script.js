@@ -9,9 +9,8 @@ fetch('https://script.google.com/macros/s/AKfycbyxyFIoOi6l4NSuWOK7byxS7zKYLnMoyV
 .then(response => response.text())
 .then(whatsappUrl => {
     alert('Registrasi Berhasil!');
-    window.open('https://api.whatsapp.com/send?phone=62895386314380&text=Saya%20sudah%20Regiatrasi');
-    
-})
+    window.location.reload();
+    })
 .catch(error => {
     console.error('Error:', error);
 });
