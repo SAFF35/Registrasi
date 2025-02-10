@@ -9,8 +9,9 @@ fetch('https://script.google.com/macros/s/AKfycbyxyFIoOi6l4NSuWOK7byxS7zKYLnMoyV
 .then(response => response.text())
 .then(whatsappUrl => {
     alert('Registrasi Berhasil!');
-    window.open(whatsappUrl, '_blank'); // Buka tautan WhatsApp di tab baru
-    window.location.reload();
+    window.open('https://api.whatsapp.com/send?phone=62895386314380&text=Saya%20sudah%20Regiatrasi', '_blank');
+      // Reset form (opsional)
+      form.reset();
 })
 .catch(error => {
     console.error('Error:', error);
