@@ -20,7 +20,7 @@ document.getElementById('registrasiForm').addEventListener('submit', function(ev
         referral: finalReferral
     };
 
-    fetch('https://script.google.com/macros/s/AKfycbyxyFIoOi6l4NSuWOK7byxS7zKYLnMoyVrSKnJsmGWAN1v6ymY3crEYBR3R3XhXeRfDAw/exec'', {
+    fetch('https://script.google.com/macros/s/AKfycbyxyFIoOi6l4NSuWOK7byxS7zKYLnMoyVrSKnJsmGWAN1v6ymY3crEYBR3R3XhXeRfDAw/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
@@ -28,14 +28,11 @@ document.getElementById('registrasiForm').addEventListener('submit', function(ev
         },
         body: JSON.stringify(data)
     })
-    .then(response => response.text())
-    .then(whatsappUrl => {
+    .then(response => {
         alert('Registrasi Berhasil!');
-        window.open('https://api.whatsapp.com/send?phone=62895386314380&text=Saya%20sudah%20Regiatrasi', '_blank');
         window.location.reload();
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Terjadi kesalahan. Silakan coba lagi.');
     });
 });
